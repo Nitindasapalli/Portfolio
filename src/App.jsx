@@ -11,55 +11,55 @@ export default function CyberSecurityPortfolio() {
       title: 'SIEM Log Analysis',
       tech: 'Linux · Shell · SOC Workflow',
       description:
-        'Performed log collection, anomaly detection, and incident correlation while replicating real SOC triage and alerting workflows.',
+        'Designed a SIEM-style log analysis workflow to simulate SOC triage, alert correlation, and threat detection pipelines used in enterprise security operations.',
       github: 'https://github.com/Nitindasapalli/siem-log-analysis',
       image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200&auto=format&fit=crop',
-      metrics: ['24/7 Monitoring', 'Log Correlation', 'Threat Detection'],
+      metrics: ['SOC Simulation', 'Log Correlation', 'Threat Detection'],
     },
     {
       title: 'Phishing Simulation Demo',
       tech: 'Python · Security Awareness',
       description:
-        'Developed a phishing simulation platform with credential logging, landing pages, and awareness-focused reporting for cybersecurity training.',
+        'Built a phishing simulation platform for cybersecurity awareness training, demonstrating credential capture flows and user security education techniques.',
       github: 'https://github.com/Nitindasapalli/phish_demo',
       image: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=1200&auto=format&fit=crop',
-      metrics: ['Awareness Training', 'Credential Logging', 'Email Simulation'],
+      metrics: ['Awareness Training', 'Email Simulation', 'Credential Flow'],
     },
     {
       title: 'Password Cracker',
       tech: 'Python · Authentication Security',
       description:
-        'Built a password auditing tool supporting brute-force and dictionary-based testing to demonstrate weak credential risks and mitigation strategies.',
+        'Developed a password auditing tool to demonstrate brute-force and dictionary attack risks in weak authentication systems.',
       github: 'https://github.com/Nitindasapalli/password-cracker',
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop',
-      metrics: ['Hash Testing', 'Dictionary Attack', 'Authentication Security'],
+      metrics: ['Hash Testing', 'Brute Force', 'Auth Security'],
     },
     {
       title: 'Vulnerability Scanner',
-      tech: 'Shell Scripting · Linux · Nmap',
+      tech: 'Shell · Linux · Nmap',
       description:
-        'Built an automated Linux vulnerability scanner using Nmap and enumeration tools to identify misconfigurations, outdated services, and exposed ports.',
+        'Automated vulnerability scanner using Nmap and enumeration tools to identify open ports, misconfigurations, and exposed services.',
       github: 'https://github.com/Nitindasapalli/vulnscan',
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop',
-      metrics: ['Port Enumeration', 'Nmap Scanning', 'Security Reporting'],
+      metrics: ['Port Scanning', 'Enumeration', 'Risk Detection'],
     },
     {
       title: 'Ethical Hacking Projects',
-      tech: 'Penetration Testing · Networking · Linux',
+      tech: 'Penetration Testing · Linux',
       description:
-        'Collection of ethical hacking and cybersecurity projects focused on penetration testing, networking, reconnaissance, and security engineering practices.',
+        'Collection of ethical hacking exercises focused on reconnaissance, exploitation techniques, and system security testing.',
       github: 'https://github.com/Nitindasapalli/Ethical-Hacking-Projects',
       image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop',
-      metrics: ['Reconnaissance', 'Privilege Escalation', 'Exploit Research'],
+      metrics: ['Recon', 'Exploitation', 'Security Testing'],
     },
     {
       title: 'VPN Configuration Using Raspberry Pi',
-      tech: 'Raspberry Pi · Network Security',
+      tech: 'Networking · Security Engineering',
       description:
-        'Configured a secure VPN server with encryption, authentication, routing, and remote access testing.',
+        'Configured a secure VPN server using Raspberry Pi with encrypted remote access and secure tunneling.',
       github: 'https://github.com/Nitindasapalli',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
-      metrics: ['Secure Remote Access', 'Encryption', 'Network Routing'],
+      metrics: ['VPN Setup', 'Encryption', 'Remote Access'],
     },
   ];
 
@@ -69,272 +69,163 @@ export default function CyberSecurityPortfolio() {
     'Cisco – Introduction to Cybersecurity',
     'Cisco – Networking Basics',
     'Google – Foundations of Cybersecurity',
-    'Udemy – Complete Ethical Hacking',
+    'Udemy – Ethical Hacking Complete',
   ];
 
   return (
     <div className="min-h-screen bg-black text-green-400 font-mono">
+
+      {/* HEADER */}
       <header className="relative overflow-hidden border-b border-green-500/20">
+
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_#22c55e_0,_transparent_70%)]" />
 
-        <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative z-10">
+        <nav className="max-w-7xl mx-auto px-6 py-5 flex justify-between relative z-10">
           <h1 className="text-2xl font-bold tracking-widest text-green-300">
             NITIN<span className="text-white">.SEC</span>
           </h1>
-
-          <div className="hidden md:flex gap-6 text-sm uppercase tracking-wider">
-            <a href="#about" className="hover:text-white transition">About</a>
-            <a href="#skills" className="hover:text-white transition">Skills</a>
-            <a href="#projects" className="hover:text-white transition">Projects</a>
-            <a href="#certifications" className="hover:text-white transition">Certifications</a>
-            <a href="#contact" className="hover:text-white transition">Contact</a>
-          </div>
         </nav>
 
+        {/* HERO */}
         <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+
+          {/* LEFT */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10 text-sm mb-6">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
               Security Engineer & Network Engineer
             </div>
 
-            <h2 className="text-5xl md:text-7xl font-black leading-tight text-white">
-              Building
-              <span className="block text-green-400">Secure Networks & Systems</span>
+            <h2 className="text-5xl font-black text-white">
+              Building <span className="text-green-400">Secure Systems</span>
             </h2>
 
-            <p className="mt-8 text-lg text-green-200/80 leading-relaxed max-w-2xl">
-              Cybersecurity postgraduate with an MSc in Cyber Security from the University of Surrey. Focused on network security, SOC operations, detection engineering, infrastructure protection, and secure enterprise systems.
+            <p className="mt-6 text-green-200/80 max-w-xl">
+              MSc Cyber Security graduate specializing in SOC operations, network defense,
+              and secure infrastructure engineering.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="px-6 py-3 rounded-xl bg-green-500 text-black font-bold hover:scale-105 transition-transform"
-              >
+            {/* TERMINAL BLOCK */}
+            <div className="mt-8 font-mono text-green-400 bg-black p-4 rounded-xl border border-green-500/20">
+              $ initializing security profile...<br />
+              $ loading SOC modules...<br />
+              $ network defense systems: ACTIVE<br />
+              $ status: READY FOR DEPLOYMENT
+            </div>
+
+            {/* BUTTONS */}
+            <div className="mt-10 flex gap-4">
+              <a href="#projects" className="px-6 py-3 bg-green-500 text-black rounded-xl font-bold">
                 View Projects
               </a>
 
-              <a
-                href="mailto:ngdasapalli@outlook.com"
-                className="px-6 py-3 rounded-xl border border-green-500/40 hover:bg-green-500/10 transition"
-              >
-                Contact Me
+              <a href="/resume.pdf" download className="px-6 py-3 border border-green-500/40 rounded-xl">
+                Download Resume
               </a>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="rounded-3xl border border-green-500/20 bg-[#051107] shadow-2xl p-6 backdrop-blur">
-              <div className="flex items-center gap-2 mb-6">
-                <span className="w-3 h-3 rounded-full bg-red-500"></span>
-                <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
-                <span className="w-3 h-3 rounded-full bg-green-500"></span>
-              </div>
+          {/* RIGHT */}
+          <div className="border border-green-500/20 bg-[#051107] p-6 rounded-3xl">
+            <p className="text-green-400">root@surrey:~$ whoami</p>
+            <p className="text-white mb-4">Security Engineer</p>
 
-              <div className="space-y-4 text-sm md:text-base">
-                <p>
-                  <span className="text-green-500">root@surrey</span>:~$ whoami
-                </p>
-                <p className="text-white">Nitin Gurunath Dasapalli</p>
+            <p className="text-green-400">status</p>
+            <p className="text-white mb-4">SOC | Network | Linux</p>
 
-                <p>
-                  <span className="text-green-500">root@surrey</span>:~$ status
-                </p>
-                <p className="text-white">Security Engineering • Network Security • Linux</p>
-
-                <p>
-                  <span className="text-green-500">root@surrey</span>:~$ current_focus
-                </p>
-                <p className="text-white">
-                  Security Engineering | Network Engineering | SOC Operations
-                </p>
-
-                <p>
-                  <span className="text-green-500">root@surrey</span>:~$ location
-                </p>
-                <p className="text-white">Guildford, United Kingdom</p>
-              </div>
-            </div>
+            <p className="text-green-400">location</p>
+            <p className="text-white">Guildford, UK</p>
           </div>
+
         </section>
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-20 space-y-24">
-        <section id="about" className="grid lg:grid-cols-2 gap-12 items-start">
-          <div>
-            <p className="uppercase text-green-500 tracking-[0.3em] text-sm mb-4">About Me</p>
-            <h3 className="text-4xl font-bold text-white mb-6">
-              Security Engineer & Network Engineer
-            </h3>
-          </div>
 
-          <div className="text-green-200/80 leading-relaxed space-y-5 text-lg">
-            <p>
-              I completed my MSc in Cyber Security at the University of Surrey, where I specialised in network security, cloud security, penetration testing, secure infrastructure, and systems engineering.
-            </p>
+        {/* ABOUT */}
+        <section>
+          <h3 className="text-3xl text-white font-bold">About Me</h3>
+          <p className="text-green-200/80 mt-4">
+            Cybersecurity graduate focused on SOC operations, network engineering,
+            penetration testing, and secure system design.
+          </p>
+        </section>
 
-            <p>
-              My hands-on experience includes SIEM log analysis, VPN deployments, Linux hardening, TCP/IP networking, network scanning, SOC workflows, and infrastructure security analysis aligned with MITRE ATT&CK methodologies.
-            </p>
-
-            <p>
-              I am particularly interested in Security Engineering and Network Engineering roles where I can contribute to secure infrastructure design, threat detection, incident response, and enterprise network protection.
+        {/* JOB SECTION */}
+        <section className="text-center">
+          <div className="inline-block p-4 border border-green-500/30 rounded-xl bg-green-500/5">
+            <h2 className="text-green-400 font-bold">Actively Seeking Roles</h2>
+            <p className="text-green-200/80 mt-2">
+              Security Engineer • Network Engineer • SOC Analyst
             </p>
           </div>
         </section>
 
-        <section id="skills">
-          <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
-            <div>
-              <p className="uppercase text-green-500 tracking-[0.3em] text-sm mb-3">Core Skills</p>
-              <h3 className="text-4xl font-bold text-white">Security & Network Engineering Skills</h3>
-            </div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {skills.map((skill) => (
-              <div
-                key={skill}
-                className="border border-green-500/20 bg-green-500/5 rounded-2xl p-5 hover:border-green-400 hover:-translate-y-1 transition-all"
-              >
-                <div className="text-green-400 text-lg">&gt; {skill}</div>
+        {/* SKILLS */}
+        <section>
+          <h3 className="text-3xl text-white font-bold mb-6">Skills</h3>
+          <div className="grid md:grid-cols-4 gap-4">
+            {skills.map(skill => (
+              <div key={skill} className="border border-green-500/20 p-4 rounded-xl">
+                {skill}
               </div>
             ))}
           </div>
         </section>
 
-        <section id="projects">
-          <div className="mb-12">
-            <p className="uppercase text-green-500 tracking-[0.3em] text-sm mb-3">Projects</p>
-            <h3 className="text-4xl font-bold text-white">Security Engineering & Networking Projects</h3>
-          </div>
+        {/* PROJECTS */}
+        <section>
+          <h3 className="text-3xl text-white font-bold mb-6">Projects</h3>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {projects.map((project) => (
-              <div
-                key={project.title}
-                className="group overflow-hidden border border-green-500/20 rounded-3xl bg-gradient-to-br from-green-500/5 to-transparent hover:border-green-400 hover:-translate-y-2 transition-all duration-300 shadow-2xl"
-              >
-                <div className="relative h-56 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-70"
-                  />
+          <div className="grid md:grid-cols-2 gap-6">
+            {projects.map(p => (
+              <div key={p.title} className="border border-green-500/20 rounded-xl p-5">
+                <h4 className="text-white text-xl">{p.title}</h4>
+                <p className="text-green-200/80 mt-2">{p.description}</p>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-
-                  <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
-                    <h4 className="text-2xl font-bold text-white group-hover:text-green-300 transition max-w-[70%]">
-                      {project.title}
-                    </h4>
-
-                    <span className="text-xs border border-green-500/30 px-3 py-1 rounded-full text-green-300 backdrop-blur bg-black/30">
-                      Security
-                    </span>
-                  </div>
-                </div>
-
-                <div className="p-7">
-                <div className="flex flex-wrap gap-2 mb-5">
-                  {project.metrics.map((metric) => (
-                    <span
-                      key={metric}
-                      className="text-xs px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-300"
-                    >
-                      {metric}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex items-center justify-between mb-5">
-                  <div></div>
-                </div>
-
-                <p className="text-green-400 text-sm mb-4">{project.tech}</p>
-
-                <p className="text-green-100/80 leading-relaxed mb-6">
-                  {project.description}
-                </p>
-
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-green-500/30 hover:border-green-400 hover:bg-green-500/10 transition"
-                >
-                  <span>View Project</span>
-                  <span>↗</span>
+                <a className="text-green-400 mt-3 inline-block" href={p.github} target="_blank">
+                  View Project →
                 </a>
-                </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section id="certifications">
-          <div className="mb-10">
-            <p className="uppercase text-green-500 tracking-[0.3em] text-sm mb-3">Achievements</p>
-            <h3 className="text-4xl font-bold text-white">Certifications</h3>
+        {/* SOC DASHBOARD */}
+        <section className="grid md:grid-cols-3 gap-6">
+          <div className="p-6 border border-green-500/20 rounded-xl text-center">
+            Threat Detection ACTIVE
           </div>
+          <div className="p-6 border border-green-500/20 rounded-xl text-center">
+            Network Monitoring ONLINE
+          </div>
+          <div className="p-6 border border-green-500/20 rounded-xl text-center">
+            Incident Response READY
+          </div>
+        </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certifications.map((cert) => (
-              <div
-                key={cert}
-                className="border border-green-500/20 rounded-2xl p-6 bg-black/40 hover:bg-green-500/10 transition"
-              >
-                <div className="text-green-300 text-lg font-semibold">{cert}</div>
+        {/* CERTIFICATIONS */}
+        <section>
+          <h3 className="text-3xl text-white font-bold mb-6">Certifications</h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            {certifications.map(c => (
+              <div key={c} className="border border-green-500/20 p-4 rounded-xl">
+                {c}
               </div>
             ))}
           </div>
         </section>
 
-        <section id="contact" className="rounded-[2rem] border border-green-500/20 bg-gradient-to-r from-green-500/10 to-transparent p-10">
-          <div className="max-w-3xl">
-            <p className="uppercase text-green-500 tracking-[0.3em] text-sm mb-3">Contact</p>
-            <h3 className="text-4xl font-bold text-white mb-6">
-              Let’s Build Secure Systems Together
-            </h3>
-
-            <p className="text-green-100/80 text-lg leading-relaxed mb-8">
-              Actively seeking full-time Security Engineer, SOC Analyst, and Network Engineer roles focused on infrastructure security, enterprise networking, threat detection, and secure systems engineering.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-5">
-              <a
-                href="mailto:ngdasapalli@outlook.com"
-                className="border border-green-500/20 rounded-2xl p-5 hover:border-green-400 transition"
-              >
-                <div className="text-sm text-green-500 mb-2">Email</div>
-                <div className="text-white break-all">ngdasapalli@outlook.com</div>
-              </a>
-
-              <a
-                href="https://github.com"
-                target="_blank"
-                className="border border-green-500/20 rounded-2xl p-5 hover:border-green-400 transition"
-              >
-                <div className="text-sm text-green-500 mb-2">GitHub</div>
-                <div className="text-white">github.com/NitinDasapalli</div>
-              </a>
-
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                className="border border-green-500/20 rounded-2xl p-5 hover:border-green-400 transition"
-              >
-                <div className="text-sm text-green-500 mb-2">LinkedIn</div>
-                <div className="text-white">linkedin.com/in/NitinDasapalli</div>
-              </a>
-            </div>
-          </div>
+        {/* CONTACT */}
+        <section>
+          <h3 className="text-3xl text-white font-bold mb-6">Contact</h3>
+          <p>Email: ngdasapalli@outlook.com</p>
         </section>
+
       </main>
 
-      <footer className="border-t border-green-500/20 py-8 text-center text-green-500 text-sm">
-        © 2026 Nitin Gurunath Dasapalli · Security Engineer Portfolio
+      <footer className="text-center py-8 border-t border-green-500/20">
+        © 2026 Security Portfolio
       </footer>
     </div>
   );
