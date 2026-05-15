@@ -1,16 +1,134 @@
-# React + Vite
+# 🔐 Cybersecurity Portfolio – Nitin Dasapalli
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern cybersecurity portfolio website built with **React**, **Vite**, and **Tailwind CSS**, focused on showcasing projects, skills, and experience in:
 
-Currently, two official plugins are available:
+- Security Engineering
+- Network Engineering
+- SOC Operations
+- Threat Detection
+- Ethical Hacking
+- Infrastructure Security
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Portfolio
 
-## React Compiler
+👉 https://portfolio-phi-opal-40.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 👨‍💻 About Me
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I am an MSc Cyber Security graduate from the University of Surrey with strong interests in:
+
+- Security Engineering
+- Network Security
+- SOC Operations
+- Threat Detection
+- Secure Infrastructure
+- Penetration Testing
+
+This portfolio highlights practical cybersecurity projects and hands-on technical skills aligned with real-world security operations and enterprise security engineering environments.
+
+---
+
+# ⚡ Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- HTML5
+- CSS3
+
+---
+
+# 🛠 Featured Projects
+
+## 🔎 SIEM Log Analysis
+Simulated SOC workflows including log analysis, threat correlation, anomaly detection, and incident triage.
+
+### Skills:
+- SIEM Concepts
+- Threat Detection
+- Log Correlation
+- Linux
+
+---
+
+## 🎣 Phishing Simulation Demo
+Built a phishing awareness simulation platform demonstrating credential capture workflows for security training purposes.
+
+### Skills:
+- Python
+- Security Awareness
+- Email Simulation
+
+---
+
+## 🔐 Password Cracker
+Developed a password auditing tool demonstrating brute-force and dictionary-based authentication attacks.
+
+### Skills:
+- Python
+- Authentication Security
+- Hash Analysis
+
+---
+
+## 🛡 Vulnerability Scanner
+Created an automated Linux vulnerability scanner using Nmap and enumeration techniques.
+
+### Skills:
+- Nmap
+- Linux
+- Enumeration
+- Security Auditing
+
+---
+
+## 💻 Ethical Hacking Projects
+Collection of practical ethical hacking and penetration testing exercises focused on reconnaissance and security testing.
+
+### Skills:
+- Penetration Testing
+- Reconnaissance
+- Linux Security
+
+---
+
+# 🧠 Core Skills
+
+- Security Engineering
+- Network Engineering
+- Linux Administration
+- SIEM Analysis
+- Threat Hunting
+- TCP/IP Networking
+- Network Security
+- Python Scripting
+- Nmap
+- Burp Suite
+- Metasploit
+- Shell Scripting
+- VPN Configuration
+- Cloud Security
+- Digital Forensics
+
+---
+
+# 📜 Certifications
+
+- TryHackMe – Advent of Cyber 2024
+- TryHackMe – Pre Security
+- Cisco – Introduction to Cybersecurity
+- Cisco – Networking Basics
+- Google – Foundations of Cybersecurity
+- Udemy – Complete Ethical Hacking
+
+---
+
+# 🚀 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Nitindasapalli/Portfolio.git
