@@ -11,7 +11,7 @@ A modern cybersecurity portfolio website built with **React**, **Vite**, and **T
 
 ## 🌐 Live Portfolio
 
-👉 https://portfolio-phi-opal-40.vercel.app/
+👉 https://nitingurunathdasapalli.vercel.app/
 
 ---
 
